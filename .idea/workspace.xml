@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ebbb56e1-afb1-44c9-aa0c-3b98a4d5b10e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shop.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/command/GeneralCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/command/GoodsCatalogCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/command/PutTheGoodsInTheCartCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/AccountController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/filter/AuthenticationFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/Goods.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/repositoriy/AllGoodsRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/repositoriy/AllUsersRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/repositoriy/GoodsRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/repositoriy/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/servlet/AccountServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/servlet/CartServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/servlet/RegistrationServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/servlet/SignInServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/el.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/img/garland.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/jsp/account.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/jsp/cart.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/jsp/registration.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/jsp/signIn.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/controller/AccountControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/service/UserServiceTest.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="C:\Program Files\JetBrains\IntelliJ IDEA 2020.2.1\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1lLS8b1dUoSEeqBSCxkn6J9R3v1" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/target/shop-1.0-SNAPSHOT.war" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RunManager" selected="JUnit.UserServiceTest.getUser">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AccountControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="shop" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="controller" />
+      <option name="MAIN_CLASS_NAME" value="controller.AccountControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceTest.getUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="shop" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="service" />
+      <option name="MAIN_CLASS_NAME" value="service.UserServiceTest" />
+      <option name="METHOD_NAME" value="getUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceTest.getUserNotFound" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="shop" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="service" />
+      <option name="MAIN_CLASS_NAME" value="service.UserServiceTest" />
+      <option name="METHOD_NAME" value="getUserNotFound" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tomcat 9.0.40" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.40" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="openjdk-14" nameIsGenerated="true">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8083/shop/" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <file path="$PROJECT_DIR$/target/shop-1.0-SNAPSHOT.war">
+          <settings>
+            <option name="CONTEXT_PATH" value="/shop" />
+          </settings>
+        </file>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Tomcat_9_0_40_shop" />
+        <option name="HTTP_PORT" value="8083" />
+        <option name="JNDI_PORT" value="1102" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="58718" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/pom.xml" goal="clean" />
+        <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/pom.xml" goal="install" />
+        <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/pom.xml" goal="war:war" />
+      </method>
+    </configuration>
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.40" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="openjdk-14">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/shop/" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment />
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="_shop" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="58718" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/pom.xml" goal="clean" />
+        <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/pom.xml" goal="install" />
+        <option name="Maven.BeforeRunTask" enabled="true" file="$PROJECT_DIR$/pom.xml" goal="war:war" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Tomcat Server.Tomcat 9.0.40" />
+      <item itemvalue="JUnit.AccountControllerTest" />
+      <item itemvalue="JUnit.UserServiceTest.getUserNotFound" />
+      <item itemvalue="JUnit.UserServiceTest.getUser" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.UserServiceTest.getUser" />
+        <item itemvalue="JUnit.UserServiceTest.getUserNotFound" />
+        <item itemvalue="JUnit.AccountControllerTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ebbb56e1-afb1-44c9-aa0c-3b98a4d5b10e" name="Default Changelist" comment="" />
+      <created>1607374724186</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1607374724186</updated>
+      <workItem from="1607374725385" duration="533000" />
+      <workItem from="1607452593826" duration="269000" />
+      <workItem from="1607542352802" duration="923000" />
+      <workItem from="1607543315600" duration="3249000" />
+      <workItem from="1607626188839" duration="2410000" />
+      <workItem from="1607629941933" duration="3480000" />
+      <workItem from="1607796780804" duration="4569000" />
+      <workItem from="1607849860152" duration="18530000" />
+      <workItem from="1607874926628" duration="14623000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="280" y="4" key="#Project_Structure" timestamp="1607885842370">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="280" y="4" key="#Project_Structure/0.0.1600.860@0.0.1600.860" timestamp="1607885842370" />
+    <state x="254" y="0" width="1092" height="860" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607877184363">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="254" y="0" width="1092" height="860" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1600.860@0.0.1600.860" timestamp="1607877184363" />
+    <state x="605" y="146" key="#com.intellij.ide.util.MemberChooser" timestamp="1607868734130">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="605" y="146" key="#com.intellij.ide.util.MemberChooser/0.0.1600.860@0.0.1600.860" timestamp="1607868734130" />
+    <state x="583" y="299" width="433" height="268" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1607547439724">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="583" y="299" width="433" height="268" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1600.860@0.0.1600.860" timestamp="1607547439724" />
+    <state x="580" y="197" key="FileChooserDialogImpl" timestamp="1607875870664">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="580" y="197" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1607875870664" />
+    <state width="1540" height="220" key="GridCell.Tab.0.bottom" timestamp="1607891206964">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1540" height="220" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1607891206964" />
+    <state width="1540" height="220" key="GridCell.Tab.0.center" timestamp="1607891206964">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1540" height="220" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1607891206964" />
+    <state width="1540" height="220" key="GridCell.Tab.0.left" timestamp="1607891206963">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1540" height="220" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1607891206963" />
+    <state width="1540" height="220" key="GridCell.Tab.0.right" timestamp="1607891206964">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1540" height="220" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1607891206964" />
+    <state width="1057" height="220" key="GridCell.Tab.1.bottom" timestamp="1607884060429">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1057" height="220" key="GridCell.Tab.1.bottom/0.0.1600.860@0.0.1600.860" timestamp="1607884060429" />
+    <state width="1057" height="220" key="GridCell.Tab.1.center" timestamp="1607884060429">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1057" height="220" key="GridCell.Tab.1.center/0.0.1600.860@0.0.1600.860" timestamp="1607884060429" />
+    <state width="1057" height="220" key="GridCell.Tab.1.left" timestamp="1607884060428">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1057" height="220" key="GridCell.Tab.1.left/0.0.1600.860@0.0.1600.860" timestamp="1607884060428" />
+    <state width="1057" height="220" key="GridCell.Tab.1.right" timestamp="1607884060429">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1057" height="220" key="GridCell.Tab.1.right/0.0.1600.860@0.0.1600.860" timestamp="1607884060429" />
+    <state width="1057" height="220" key="GridCell.Tab.2.bottom" timestamp="1607884060430">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1057" height="220" key="GridCell.Tab.2.bottom/0.0.1600.860@0.0.1600.860" timestamp="1607884060430" />
+    <state width="1057" height="220" key="GridCell.Tab.2.center" timestamp="1607884060430">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1057" height="220" key="GridCell.Tab.2.center/0.0.1600.860@0.0.1600.860" timestamp="1607884060430" />
+    <state width="1057" height="220" key="GridCell.Tab.2.left" timestamp="1607884060429">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1057" height="220" key="GridCell.Tab.2.left/0.0.1600.860@0.0.1600.860" timestamp="1607884060429" />
+    <state width="1057" height="220" key="GridCell.Tab.2.right" timestamp="1607884060430">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1057" height="220" key="GridCell.Tab.2.right/0.0.1600.860@0.0.1600.860" timestamp="1607884060430" />
+  </component>
+</project>
