@@ -6,13 +6,15 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.net.http.HttpRequest;
 
-public abstract class GeneralCommand {
+public abstract class Action {
     protected HttpServletRequest req;
     protected HttpServletResponse resp;
 
-    public void init(HttpServletRequest servletRequest,HttpServletResponse servletResponse){
+    public Action(HttpServletRequest servletRequest, HttpServletResponse servletResponse) {
         this.req = servletRequest;
         this.resp = servletResponse;
+
     }
-    public abstract void process() throws ServletException, IOException;
+
+    public abstract void process();
 }

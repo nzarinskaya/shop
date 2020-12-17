@@ -11,7 +11,7 @@ public class AllUsersRepository implements UserRepository{
     private static final List<User> users = new ArrayList<>();
     AllUsersRepository allUsersRepository = getInstance();
 
-    public AllUsersRepository() {
+    private AllUsersRepository() {
     }
 
     public static class AllUserRepositoryHolder{

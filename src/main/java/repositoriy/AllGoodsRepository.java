@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Optional;
 
 public class AllGoodsRepository implements GoodsRepository{
-    public AllGoodsRepository() {
+     private AllGoodsRepository() {
     }
     public static class AllGoodsRepositoryHolder{
         public static final AllGoodsRepository HOLDER_INSTANCE_ = new AllGoodsRepository();

@@ -5,13 +5,22 @@ import repositoriy.AllGoodsRepository;
 import repositoriy.GoodsRepository;
 
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-public class PutTheGoodsInTheCartCommand extends GeneralCommand {
+@WebServlet("/add")
+public class AddGoodsToCartAction extends Action {
     private final GoodsRepository goodsRepository = AllGoodsRepository.getInstance_();
+
+    public AddGoodsToCartAction(HttpServletRequest servletRequest, HttpServletResponse servletResponse) {
+        super(servletRequest, servletResponse);
+    }
+
     @Override
     @SuppressWarnings("unchecked")
     public void process(){
@@ -19,8 +28,7 @@ public class PutTheGoodsInTheCartCommand extends GeneralCommand {
         Optional<Goods> goods = goodsRepository.getById(goodsId);
 
         if(goods.isPresent()) {
-            List<Goods> cart = Optional.ofNullable
-                    ((List<Goods>) req.getSession().getAttribute("cart")).orElse(new ArrayList<>());
+            List<Goods> cart = new ArrayList<>();
             cart.add(goods.get());
 
             req.getSession().setAttribute("cart",cart);
