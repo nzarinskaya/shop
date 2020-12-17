@@ -16,5 +16,8 @@ public abstract class Action {
 
     }
 
-    public abstract void process();
+    public Action() {
+    }
+
+    public abstract void process(ExpressionContext ec);
 }

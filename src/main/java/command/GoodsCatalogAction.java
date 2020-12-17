@@ -14,9 +14,13 @@ public class GoodsCatalogAction extends Action{
     public GoodsCatalogAction(HttpServletRequest servletRequest, HttpServletResponse servletResponse) {
         super(servletRequest, servletResponse);
     }
+
+    public GoodsCatalogAction() {
+    }
+
     @Override
     @SuppressWarnings("unchecked")
-    public void process() {
+    public void process(ExpressionContext ec) {
         req.setAttribute("allGoods",goodsRepository.getAll());
     }
 }

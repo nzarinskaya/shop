@@ -22,26 +22,18 @@
             <div class="col-md-3">
                 <div class="card" style="width: 18rem; margin-left: 10px">
 
-                    <c:if test= "${allGoods.get(0)}">
-                        <img src="${pageContext.request.contextPath}/img/el.jpg" class="card-img-top" alt="...">
+                    <c:if test="${goods.id = 1}">
+                    <img src="${pageContext.request.contextPath}/img/el.jpg" class="card-img-top" alt="...">
+                        </c:if>
+
+                        <c:if test="${goods.id = 2}">
+                        <img src="${pageContext.request.contextPath}/img/garland.jpg" class="card-img-top" alt="...">
+                        </c:if>
                         <div class="card-body">
                             <h5 class="card-title"><c:out value="${goods.name}"/></h5>
                             <p class="card-text"><c:out value="${goods.description}"/></p>
-                            <a href="/account?command=AddGoodsToCartAction&goodsId=${goods.id}" methods=""
+                            <a href="add/account?command=AddGoodsToCartAction&goodsId=${goods.id}" methods=""
                                class="btn btn-primary">Add to cart</a>
-                    </c:if>
-
-                    <c:if test= "${allGoods.get(1)}">
-                        <img src="${pageContext.request.contextPath}/img/garland.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title"><c:out value="${goods.name}"/></h5>
-                        <p class="card-text"><c:out value="${goods.description}"/></p>
-                        <a href="add/account?command=AddGoodsToCartAction&goodsId=${goods.id}" methods=""
-                           class="btn btn-primary">Add to cart</a>
-
-                    </c:if>
-
-
 
                     </div>
                 </div>

@@ -29,7 +29,9 @@ public class AuthenticationFilter implements Filter {
         if ("true".equals(req.getSession().getAttribute("authorized"))) {
             chain.doFilter(request, response);
         }
-        req.getRequestDispatcher("/jsp/signIn.jsp").forward(req, resp);
+        if(!response.isCommitted()) {
+            req.getRequestDispatcher("/jsp/signIn.jsp").forward(req, resp);
+        }
     }
     @Override
     public void destroy() {

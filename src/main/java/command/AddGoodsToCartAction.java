@@ -21,9 +21,12 @@ public class AddGoodsToCartAction extends Action {
         super(servletRequest, servletResponse);
     }
 
+    public AddGoodsToCartAction() {
+    }
+
     @Override
     @SuppressWarnings("unchecked")
-    public void process(){
+    public void process(ExpressionContext ec) {
         long goodsId = Long.parseLong(req.getParameter("goodsId"));
         Optional<Goods> goods = goodsRepository.getById(goodsId);
 
