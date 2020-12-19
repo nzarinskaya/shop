@@ -39,6 +39,5 @@ public class RegistrationServlet extends HttpServlet {
             AllUsersRepository.getInstance().save(user);
             resp.sendRedirect("/shop/signIn");
         }
-
     }
 }
