@@ -1,5 +1,7 @@
 package command;
 
+import java.io.IOException;
+import javax.servlet.ServletException;
 import jdk.jshell.spi.ExecutionControl;
 import repositoriy.AllGoodsRepository;
 import repositoriy.GoodsRepository;
@@ -16,10 +18,11 @@ public class GoodsCatalogAction extends Action{
 
     @Override
     @SuppressWarnings("unchecked")
-    public void process(ExpressionContext ec) throws ExecutionControl.NotImplementedException {
-        String nameAction = "goodsCatalogAction";
-        ec.req.getSession().setAttribute("nameAction",nameAction);
+    public void process(ExpressionContext ec) throws ExecutionControl.NotImplementedException, ServletException, IOException {
+//        String nameAction = "goodsCatalogAction";
+//        ec.getReq().getSession().setAttribute("nameAction",nameAction);
 
-        ec.req.setAttribute("allGoods",goodsRepository.getAll());
+        ec.getReq().setAttribute("allGoods",goodsRepository.getAll());
+        ec.getReq().getRequestDispatcher("/jsp/account.jsp").forward(ec.getReq(), ec.getResp());
     }
 }

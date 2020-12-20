@@ -15,27 +15,22 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-import static command.ActionType.ADD_GOODS_TO_CART_ACTION;
-import static command.ActionType.GOODS_CATALOG_ACTION;
 
-
-@WebServlet("/shop/account")
+@WebServlet("/account")
 public class AccountServlet extends HttpServlet {
     private final Shop shop = new Shop();
     private final GoodsRepository goodsRepository = AllGoodsRepository.getInstance_();
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        try {
-            req.setAttribute("allGoods",goodsRepository.getAll());
-
-        } catch (ExecutionControl.NotImplementedException e) {
-            e.printStackTrace();
+        final String command = req.getParameter("command");
+        if (command != null) {
+            req.setAttribute("nameAction", "addGoodsToCartAction");
+        } else {
+            req.setAttribute("nameAction", "goodsCatalogAction");
         }
-
         ExpressionContext ec = new ExpressionContext(req,resp);
-
-            Action action = shop.choiceAction(shop.getType(ec));
+        Action action = shop.choiceAction(shop.getType(ec));
 
 
         try {
@@ -44,6 +39,6 @@ public class AccountServlet extends HttpServlet {
             e.printStackTrace();
         }
 
-        req.getRequestDispatcher("/jsp/account.jsp").forward(req,resp);
+//        req.getRequestDispatcher("/jsp/account.jsp").forward(req,resp);
     }
 }

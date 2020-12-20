@@ -27,7 +27,7 @@ public class SignInServlet extends HttpServlet {
         if (user.isPresent()) {
             req.getSession().setAttribute("login", user.get().getLogin());
             req.getSession().setAttribute("authorized", "true");
-            resp.sendRedirect("/shop/account");
+            resp.sendRedirect("account");
         }else {
             req.setAttribute("signIn_error","Login or password is incorrect!");
             req.getRequestDispatcher("/jsp/signIn.jsp").forward(req, resp);

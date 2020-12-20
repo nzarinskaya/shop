@@ -1,3 +1,5 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,11 +19,11 @@
     <div class="row">
         <c:forEach var="goods" items="${cart}">
         <div class="card" style="width: 18rem; margin-left: 10px">
-            <c:if test="${goods.id = 1}">
+            <c:if test="${goods.id == 1}">
                 <img src="${pageContext.request.contextPath}/img/el.jpg" class="card-img-top" alt="...">
             </c:if>
 
-            <c:if test="${goods.id = 2}">
+            <c:if test="${goods.id == 2}">
                 <img src="${pageContext.request.contextPath}/img/garland.jpg" class="card-img-top" alt="...">
 
             </c:if>
@@ -32,7 +34,6 @@
         </div>
     </div>
     </c:forEach>
-</div>
 </div>
 </body>
 </html>

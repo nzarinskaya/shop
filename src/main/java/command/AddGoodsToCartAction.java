@@ -26,20 +26,21 @@ public class AddGoodsToCartAction extends Action {
 
     @Override
     @SuppressWarnings("unchecked")
-    public void process(ExpressionContext ec) throws ExecutionControl.NotImplementedException {
+    public void process(ExpressionContext ec) throws ExecutionControl.NotImplementedException, ServletException, IOException {
         String nameAction = "addGoodsToCartAction" ;
-        ec.req.getSession().setAttribute("nameAction",nameAction);
+        ec.getReq().getSession().setAttribute("nameAction",nameAction);
 
 
-        long goodsId = Long.parseLong(ec.req.getParameter("goodsId"));
+        long goodsId = Long.parseLong(ec.getReq().getParameter("goodsId"));
         Optional<Goods> goods = goodsRepository.getById(goodsId);
 
         if(goods.isPresent()) {
             List<Goods> cart = new ArrayList<>();
             cart.add(goods.get());
 
-            ec.req.getSession().setAttribute("cart",cart);
-            ec.req.setAttribute("allGoods",goodsRepository.getAll());
+            ec.getReq().getSession().setAttribute("cart",cart);
+            ec.getReq().setAttribute("allGoods",goodsRepository.getAll());
+            ec.getReq().getRequestDispatcher("/jsp/cart.jsp").forward(ec.getReq(), ec.getResp());
         }
     }
 }
