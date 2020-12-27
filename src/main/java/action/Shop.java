@@ -1,4 +1,5 @@
-package command;
+package action;
+
 
 import static command.ActionType.ADD_GOODS_TO_CART_ACTION;
 import static command.ActionType.GOODS_CATALOG_ACTION;

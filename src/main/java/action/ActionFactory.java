@@ -1,4 +1,4 @@
-package command;
+package action;
 
 public class ActionFactory {
     public Action createAction(ActionType type){

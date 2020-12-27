@@ -1,4 +1,4 @@
-package command;
+package action;
 
 public enum ActionType {
     GOODS_CATALOG_ACTION,

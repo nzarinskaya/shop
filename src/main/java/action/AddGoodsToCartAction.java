@@ -1,4 +1,4 @@
-package command;
+package action;
 
 import jdk.jshell.spi.ExecutionControl;
 import model.Goods;

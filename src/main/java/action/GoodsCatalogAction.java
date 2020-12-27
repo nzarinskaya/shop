@@ -1,4 +1,4 @@
-package command;
+package action;
 
 import java.io.IOException;
 import javax.servlet.ServletException;
