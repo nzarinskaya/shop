@@ -1,7 +1,7 @@
 package repositoriy;
 
 import jdk.jshell.spi.ExecutionControl;
-import model.Goods;
+import entity.goods.Goods;
 
 import java.util.List;
 import java.util.Optional;
@@ -26,7 +26,7 @@ public class AllGoodsRepository implements GoodsRepository  {
     }
 
     @Override
-    public Optional<Goods> getById(long goodsId)throws ExecutionControl.NotImplementedException {
+    public Optional<Goods> getById(int goodsId)throws ExecutionControl.NotImplementedException {
         return allGoods.stream().filter(goods -> goods.getId() == goodsId).findAny();
     }
 

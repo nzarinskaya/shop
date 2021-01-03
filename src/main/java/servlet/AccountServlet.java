@@ -32,13 +32,12 @@ public class AccountServlet extends HttpServlet {
         ExpressionContext ec = new ExpressionContext(req,resp);
         Action action = shop.choiceAction(shop.getType(ec));
 
-
         try {
             action.process(ec);
         } catch (ExecutionControl.NotImplementedException e) {
             e.printStackTrace();
         }
 
-//        req.getRequestDispatcher("/jsp/account.jsp").forward(req,resp);
+        req.getRequestDispatcher("/jsp/account.jsp").forward(req,resp);
     }
 }

@@ -19,8 +19,8 @@ public class GoodsCatalogAction extends Action{
     @Override
     @SuppressWarnings("unchecked")
     public void process(ExpressionContext ec) throws ExecutionControl.NotImplementedException, ServletException, IOException {
-//        String nameAction = "goodsCatalogAction";
-//        ec.getReq().getSession().setAttribute("nameAction",nameAction);
+      String nameAction = "goodsCatalogAction";
+      ec.getReq().getSession().setAttribute("nameAction",nameAction);
 
         ec.getReq().setAttribute("allGoods",goodsRepository.getAll());
         ec.getReq().getRequestDispatcher("/jsp/account.jsp").forward(ec.getReq(), ec.getResp());

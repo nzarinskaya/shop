@@ -1,7 +1,7 @@
 package command;
 
 import jdk.jshell.spi.ExecutionControl;
-import model.Goods;
+import entity.goods.Goods;
 import repositoriy.AllGoodsRepository;
 import repositoriy.GoodsRepository;
 
@@ -31,7 +31,7 @@ public class AddGoodsToCartAction extends Action {
         ec.getReq().getSession().setAttribute("nameAction",nameAction);
 
 
-        long goodsId = Long.parseLong(ec.getReq().getParameter("goodsId"));
+        int goodsId = Integer.parseInt(ec.getReq().getParameter("goodsId"));
         Optional<Goods> goods = goodsRepository.getById(goodsId);
 
         if(goods.isPresent()) {
