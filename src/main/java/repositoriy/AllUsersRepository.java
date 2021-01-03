@@ -1,10 +1,11 @@
 package repositoriy;
 
-import model.User;
+import entity.user.User;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
+import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.atomic.AtomicLong;
 
 public class AllUsersRepository implements UserRepository{
@@ -22,7 +23,7 @@ public class AllUsersRepository implements UserRepository{
         return AllUserRepositoryHolder.HOLDER_INSTANCE;
     }
 
-    private AtomicLong doId = new AtomicLong(1);
+    private AtomicInteger doId = new AtomicInteger(1);
 
     @Override
     public List<User> getAll() {
@@ -30,7 +31,7 @@ public class AllUsersRepository implements UserRepository{
     }
 
     @Override
-    public Optional<User> getById(long userId) {
+    public Optional<User> getById(int userId) {
         return Optional.empty();
     }
 

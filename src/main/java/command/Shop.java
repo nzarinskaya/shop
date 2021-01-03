@@ -8,16 +8,14 @@ public class Shop{
 
     public ActionType getType(ExpressionContext ec)  {
         final String nameAction = (String) ec.getReq().getAttribute("nameAction");
-        if ("addGoodsToCartAction".equals(nameAction)) {
+        if("addGoodsToCartAction".equals(nameAction)) {
             return ADD_GOODS_TO_CART_ACTION;
         }
-        if ("goodsCatalogAction".equals(nameAction)) {
+        if("goodsCatalogAction".equals(nameAction)) {
             return GOODS_CATALOG_ACTION;
         }
-        // default action
         return GOODS_CATALOG_ACTION;
     }
-
     public Action choiceAction(ActionType type)  {
         return actionFactory.createAction(type);
      }

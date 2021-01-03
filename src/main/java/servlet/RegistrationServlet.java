@@ -1,6 +1,6 @@
 package servlet;
 
-import model.User;
+import entity.user.User;
 import repositoriy.AllUsersRepository;
 
 import javax.servlet.ServletException;
